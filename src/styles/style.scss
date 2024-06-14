@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.wrap > aside {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(52, 103, 255, 0.8117647059);
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0 15px 0 0;
+}
+
+.wrap > aside > h1 {
+  margin: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.wrap > aside > h1 img {
+  width: 80px;
+  transform: rotateZ(-10deg);
+  margin-top: 20px;
+}
+
+.wrap > aside > .sideBar {
+  margin-top: 50px;
+}
+
+.wrap > aside > .sideBar div {
+  margin: 20px 0;
+}
+
+.wrap > aside > .sideBar div img {
+  width: 30px;
+  padding-right: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.wrap > aside > .sideBar div a {
+  display: block;
+  padding: 20px 10px;
+  font-size: 17px;
+}
+
+.wrap > aside > .sideBar div a:hover {
+  background-color: #adadad46;
+}
+
+.wrap > .cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 85%;
+}
+
+.wrap > .cont > header {
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid rgba(52, 103, 255, 0.8117647059);
+  width: 100%;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.wrap > .cont > header div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: end;
+  padding: 0 10px;
+}
+
+.wrap > .cont > header .navRight > a {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.wrap > .cont > header .navRight > a:hover p {
+  color: #3467ffcf;
+}
+
+.wrap > .cont > header .navRight > a:hover .alert {
+  color: #fff;
+}
+
+.wrap > .cont > header .navRight > a .alert {
+  background-color: #ff551c;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  z-index: 100;
+  top: -8px;
+  left: -12px;
+}
+
+.wrap > .cont > header .navRight img {
+  width: 25px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.wrap > .cont {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wrap > .cont > main {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.wrap > .cont > main > contents {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap > .cont > main > aside .sideBar {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+.chatside {
+  background-color: rgb(214, 214, 214);
+}
+
+.wrap > .cont > footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ededed;
+  text-align: center;
+  border: none;
+  flex-shrink: 0;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.wrap > .cont > footer ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+.wrap > .cont > footer ul li:first-child {
+  font-weight: bold;
+}
+
+.footerContent {
+  text-align: center;
+  font-size: 12px;
+}
+
+
+.myCate{
+  border-radius: 7px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #b8b6b6;
+  font-size: 22px;
+  color: rgb(245, 245, 245);
+}

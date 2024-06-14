@@ -1,0 +1,685 @@
+.Board {
+  @import url("https://webfontworld.github.io/amore/AritaBuri.css");
+
+  @font-face {
+    font-family: "GangwonEduSaeeum_OTFMediumA";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*폰트 설정예시*/
+
+  /* Gangwon */
+  .ql-snow
+    .ql-picker.ql-font
+    .ql-picker-label[data-value="GangwonEduSaeeum"]::before,
+  .ql-snow
+    .ql-picker.ql-font
+    .ql-picker-item[data-value="GangwonEduSaeeum"]::before {
+    content: "GangwonEduSaeeum";
+    font-family: "GangwonEduSaeeum_OTFMediumA";
+  }
+
+  .ql-font-GangwonEduSaeeum_OTFMediumA {
+    font-family: "GangwonEduSaeeum_OTFMediumA";
+  }
+
+  /*Buri*/
+  .ql-snow .ql-picker.ql-font .ql-picker-label[data-value="buri"]::before,
+  .ql-snow .ql-picker.ql-font .ql-picker-item[data-value="buri"]::before {
+    content: "Buri";
+    font-family: "AritaBuri";
+  }
+  .ql-font-buri {
+    font-family: "AritaBuri";
+  }
+
+  /*폰트 크기예시*/
+  .ql-size-huge,
+  .ql-size span[data-value="huge"]::before {
+    font-size: 20px !important;
+  }
+  .ql-size-medium,
+  .ql-size span[data-value="medium"]::before {
+    font-size: 14px !important;
+  }
+
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+
+  .freeBoard .commu_title {
+    max-width: 1000px;
+    height: 120px;
+    background-color: rgba(52, 103, 255, 0.8117647059);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .freeBoard .commu_title .cimg {
+    padding-right: 70px;
+  }
+
+  .freeBoard .commu_title .cimg img {
+    width: 220px;
+    height: auto;
+  }
+
+  .freeBoard .commu_title .ctext > h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+
+  .freeBoard .cate {
+    display: flex;
+  }
+
+  .freeBoard .cate a {
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: #eff1f3;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    border-radius: 30px;
+  }
+
+  .freeBoard .cate a:hover {
+    display: block;
+    background-color: #6f6f6f;
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .freeBoard .search {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eff1f3;
+    padding: 26px 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .freeBoard .search .first_div {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  .freeBoard .search .first_div strong {
+    width: 140px;
+    color: #5a6265;
+    font-size: 16px;
+  }
+
+  .freeBoard .search .first_div .selectBox {
+    height: 42px;
+    line-height: 42px;
+  }
+
+  .freeBoard .search .first_div .selectBox select {
+    height: 42px;
+    padding: 0 21px;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .freeBoard .search .first_div input {
+    margin-left: 20px;
+    width: 600px;
+    height: 42px;
+    padding: 0 21px;
+    border: 0;
+    outline: none;
+  }
+
+  .freeBoard .search .first_div > .btn {
+    width: 48px;
+    height: 42px;
+    margin-left: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .freeBoard .search .first_div > .btn > img {
+    width: 21px;
+  }
+
+  .freeBoard .table .thead {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    padding: 8px;
+    color: #333;
+    border-top: 1px solid rgba(52, 103, 255, 0.8117647059);
+    text-align: center;
+  }
+
+  .freeBoard .table .tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #c9c9c9;
+    align-items: center;
+  }
+
+  .freeBoard .table div .no {
+    width: 50px;
+  }
+  .freeBoard .table div .Btitle {
+    width: 300px;
+  }
+  .freeBoard .table div .writer {
+    width: 100px;
+  }
+  .freeBoard .table div .rdate {
+    width: 100px;
+  }
+  .freeBoard .table div .hit {
+    width: 50px;
+  }
+
+  .freeBoard .table tr:hover {
+    background-color: #c9c9c92f;
+    cursor: pointer;
+  }
+
+  .freeBoard .table .tr .td {
+    text-align: center;
+    padding: 0;
+  }
+
+  .writeBtn {
+    display: block;
+    background-color: #777;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+  }
+
+  .writeBtn a {
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .writeBtn a:hover {
+    display: block;
+    background-color: #555;
+    transition: 0.3s;
+  }
+
+  .page {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .page .prev {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #e4e8ec;
+  }
+
+  .page .current {
+    background-color: #3467ffcf;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .page .num {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #e4e8ec;
+  }
+
+  /*🎈글쓰기*/
+  .editor {
+    width: 100%;
+    min-height: 400px;
+    margin: 10px auto;
+  }
+
+  .eTop {
+    display: flex;
+  }
+
+  .eTop .eCate {
+    padding-right: 10px;
+    outline: none;
+    margin-top: 20px;
+  }
+
+  .eTop .eCate select {
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #dddddd;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .eTitle {
+    width: 960px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .eTitle input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #f5f6f8;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .editBtn {
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .editBtn a {
+    margin-left: 10px;
+    display: block;
+    background-color: rgb(250, 100, 73);
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .editBtn a:hover {
+    background-color: rgb(255, 68, 35);
+  }
+
+  .editBtn button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #5f5f5f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .editBtn button:hover {
+    background-color: #444;
+  }
+
+  .ql-container.ql-snow {
+    min-height: 400px;
+    height: 100%;
+  }
+
+  .ql-editor {
+    min-height: 400px;
+    height: 100%;
+    font-size: 16px;
+  }
+
+  /*bold, italic 추가*/
+  .ql-editor b {
+    font-weight: bold;
+  }
+
+  .ql-editor i {
+    font-style: italic;
+  }
+
+  .backGround {
+    background-color: #6f6f6f;
+  }
+
+  /*🎈글보기*/
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .view {
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .view .vTitle {
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 10px;
+  }
+
+  .view .vTitle h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #000;
+  }
+  .vTitle > div {
+    display: flex;
+  }
+
+  .vTitle div .text {
+    padding-left: 20px;
+  }
+
+  .vTitle div .text p:nth-child(2) {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .vContent {
+    position: relative;
+  }
+
+  .vContent .reportBtn {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    font-size: 15px;
+  }
+
+  .commentForm {
+  }
+
+  .commentForm > h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .commentForm .comment {
+    border: 2px solid #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .commentForm .comment > span {
+    font-weight: bold;
+  }
+
+  .commentForm .comment textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .commentBtn {
+    text-align: end;
+    margin-top: 10px;
+  }
+
+  .commentBtn > input {
+    width: 60px;
+    padding: 6px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .commentBtn > button {
+    width: 60px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .reportBtn:hover {
+    border-bottom: 1px solid #c9c9c9;
+  }
+
+  .vBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .vBtn > div a {
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 8px;
+    background-color: #b4b4b4;
+  }
+
+  .vBtn > div a.writeBtn2 {
+    background-color: #3467ffcf;
+  }
+
+  .vBtn > div .topBtn {
+    margin-right: 0;
+  }
+
+  .vBtn .delBtn {
+    background-color: rgb(250, 100, 73);
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /*🎈글수정*/
+  .modify .mTitle input {
+    width: 1000px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #f5f6f8;
+    border-radius: 5px;
+    font-size: 22px;
+  }
+
+  .modify .mTitle > div {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .modify .mTitle > div .text {
+    padding-left: 20px;
+  }
+
+  .modify .btnSet {
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: end;
+  }
+
+  .modify .saveBtn {
+    background-color: #5f5f5f;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .modify .saveBtn:hover {
+    background-color: #3e3e3e;
+  }
+
+  .modify .cancelBtn {
+    background-color: rgb(250, 100, 73);
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .modify .cancelBtn:hover {
+    background-color: rgb(255, 68, 35);
+  }
+
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal textarea {
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+  }
+
+  .rSubmit {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .rSubmit:hover {
+    background-color: #d32f2f;
+  }
+
+  /*🌈관리자🌈*/
+  .myCate {
+    border-radius: 7px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #b8b6b6;
+    font-size: 22px;
+    color: rgb(245, 245, 245);
+  }
+
+  .qnaTitle {
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 23px;
+  }
+
+  .qnaAnswer {
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .addBox {
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .insertQuestion {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 23px;
+    border: none;
+    background-color: #dfdfdf;
+  }
+
+  .gaheeButton {
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 46%;
+    border: none;
+    background-color: rgb(71, 110, 236);
+    color: white;
+    border-radius: 8px;
+  }
+
+  .deleteGahee {
+    font-size: 15px;
+    margin-left: 5px;
+    color: red;
+    font-weight: bold;
+  }
+}

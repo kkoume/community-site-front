@@ -1,0 +1,167 @@
+
+    #content {
+        
+        flex: 2; /* 콘텐츠 영역이 늘어날 수 있도록 */
+        height: auto; /* 임의의 높이 설정 */
+        padding: 10px;
+        width: 1000px;
+
+    }
+
+    #chatting{
+        display: flex;
+        width: 1000px;
+        flex-direction: column-reverse;
+        height: 800px;
+        overflow: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        border:  1px solid gray;
+    }
+    .flex-container p {
+        margin: 0;
+        color: rgb(0, 0, 0);
+    }
+    .home{
+    background-color:gray;
+    border: none;
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 10px;
+    font-size: 45px;
+    margin-bottom: 2px;
+    }
+
+
+    .home3{
+    color: white;
+    }
+
+    .homeOn{
+        background-color:  rgb(202, 202, 202);
+    }
+
+    .title{
+        margin-left: 10px;
+        border-bottom: 1px solid gray;
+    }
+    .chat {
+        margin-left: 10px;
+        align-items: center;
+    }
+    .chat-item {
+        display: flex;
+        width: 100%;
+    }
+ 
+    .chat-unreadItem {
+        display: flex;
+        width: 100%;
+        background-color: rgb(224, 223, 223);
+    }
+    .chat-image {
+        flex: 1; /* 이미지 영역이 1 부분 차지 */
+        padding: 10px;
+        width: 80px;
+    }
+    .chat-text {
+        flex: 9; /* 텍스트 영역이 9 부분 차지 */
+        padding: 10px;
+    }
+    .chat-textarea{
+    border: 1px solid rgb(202, 202, 202);
+    background-color: rgb(241, 241, 241);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .chatInsert{
+    margin: 10px 2px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 80px;
+    }
+
+    .chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    }
+
+    .chat-btn-attachment,
+    .chat-btn-send {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #007BFF;
+    }
+
+
+    .chat-btn-attachment {
+    font-size: 24px;
+    }
+    
+    .chatLink{
+        padding: 0px;
+    }
+
+    .chatLarge{
+        font-size: 20px;
+    }
+
+ 
+
+   .chatSelect{
+        height: 500px;
+        text-align: center;
+        margin-top: 30%;
+    }
+
+    .chatMember{
+        margin-right: 4px;
+        font-size: 17px;
+        border: 1px solid rgb(184, 184, 184);
+        padding: 3px;
+    }
+    .chatBlank{
+        margin-left: 18px;
+    }
+
+    .chatButtonp{
+        background-color: rgba(52, 103, 255, 0.8117647059);
+        border: none;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .chatMenu {
+        margin-top: 50px;
+    }
+
+
+    .chatMenu div > a {
+        display: block;
+        padding: 20px 10px;
+        font-size: 17px;
+    }
+
+    .chatMenu div a:hover {
+        background-color: #adadad46;
+    }
+
+    .chatMenu div a > img {
+        width: 30px;
+        vertical-align: middle;
+        padding-right: 10px;
+        padding-left: 20px;
+    }

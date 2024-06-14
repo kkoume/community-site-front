@@ -1,0 +1,319 @@
+.FindId {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+  body {
+    font-family: "Montserrat", sans-serif;
+    background: white;
+  }
+  .contents {
+    width: 100%;
+  }
+
+  .container {
+    display: block;
+    width: 600px;
+    height: 100%;
+  }
+  .loginLogo {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .loginLogo img {
+    width: 200px;
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    color: #e91e63;
+    font-size: 48px;
+    letter-spacing: -3px;
+    text-align: center;
+    transition: 0.2s linear;
+  }
+
+  ul.links {
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .links {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      transition: 0.2s linear;
+
+      text-decoration: none;
+      color: #0f132a;
+
+      text-align: center;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &:nth-child(2) {
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &:nth-child(3) {
+        position: relative;
+        left: 192px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &:nth-child(4) {
+        opacity: 0.6;
+        position: relative;
+        left: 191px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      a {
+        font-weight: bolder;
+      }
+    }
+  }
+
+  form {
+    width: 100%;
+    max-width: 520px;
+    margin: 40px auto 10px;
+
+    .input__block {
+      margin: 20px auto;
+      display: block;
+      position: relative;
+
+      span {
+        color: red;
+        font-size: 12px;
+        margin-left: 18px;
+      }
+      .emailNum {
+        display: flex;
+      }
+
+      &.first-input__block {
+        &::before {
+          content: "";
+          position: absolute;
+          top: -15px;
+          left: 347px;
+          display: block;
+          width: 0;
+          height: 0;
+          background: transparent;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 15px solid rgba(#0f132a, 0.1);
+          transition: 0.2s linear;
+        }
+      }
+      &.signup-input__block {
+        &::before {
+          content: "";
+          position: absolute;
+          top: -15px;
+          left: 150px;
+          display: block;
+          width: 0;
+          height: 0;
+          background: transparent;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 15px solid rgba(#0f132a, 0.1);
+          transition: 0.2s linear;
+        }
+      }
+      input.name {
+        display: block;
+        width: 90%;
+        max-width: 680px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 8px;
+        border: none;
+        background: rgba(#0f132a, 0.1);
+        color: rgba(#0f132a, 0.3);
+        padding: 0 0 0 15px;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        &:focus,
+        &:active {
+          outline: none;
+          border: none;
+          color: rgba(#0f132a, 1);
+        }
+      }
+      input.email {
+        display: block;
+        width: 315px;
+        max-width: 680px;
+        height: 50px;
+        margin-left: 18px;
+        border-radius: 8px;
+        border: none;
+        background: rgba(#0f132a, 0.1);
+        color: rgba(#0f132a, 0.3);
+        padding: 0 0 0 15px;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .btnEmail {
+        width: 100px;
+        background: rgb(85 85 85);
+        color: white;
+        display: block;
+        margin-left: 50px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        box-shadow: 0 3px 30px rgb(2 1 2 / 36%);
+        transition: 0.2s linear;
+        &:hover {
+          box-shadow: 0 0 0 rgba(#e91e63, 0);
+        }
+      }
+    }
+
+    .btnFindId {
+      background: #e91e63;
+      color: white;
+      display: block;
+      width: 92.5%;
+      max-width: 680px;
+      height: 50px;
+      border-radius: 8px;
+      margin: 0 auto;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      box-shadow: 0 15px 30px rgba(#e91e63, 0.36);
+      transition: 0.2s linear;
+      &:hover {
+        box-shadow: 0 0 0 rgba(#e91e63, 0);
+      }
+    }
+
+    .btnRegister {
+      background: #e91e63;
+      color: white;
+      display: block;
+      width: 92.5%;
+      max-width: 680px;
+      height: 50px;
+      border-radius: 8px;
+      margin: 0 auto;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      box-shadow: 0 15px 30px rgba(#e91e63, 0.36);
+      transition: 0.2s linear;
+      &:hover {
+        box-shadow: 0 0 0 rgba(#e91e63, 0);
+      }
+    }
+  }
+
+  .separator {
+    display: block;
+    margin: 30px auto 10px;
+    text-align: center;
+    height: 40px;
+    position: relative;
+    background: transparent;
+    color: rgba(#0f132a, 0.4);
+    font-size: 13px;
+    width: 90%;
+    max-width: 500px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      background: rgba(#0f132a, 0.2);
+      height: 1px;
+      width: 45%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      background: rgba(#0f132a, 0.2);
+      height: 1px;
+      width: 45%;
+    }
+  }
+
+  .resultId {
+    text-align: center;
+    color: gray;
+    font-size: 25px;
+  }
+
+  .btnFindPw,
+  .btnLogin {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    height: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 8px;
+    border: none;
+    line-height: 40px;
+    &.btnFindPw {
+      background: #5b90f0;
+      color: white;
+      box-shadow: 0 15px 30px rgba(#5b90f0, 0.36);
+      transition: 0.2s linear;
+      .fa {
+        font-size: 20px;
+        padding: 0 5px 0 0;
+      }
+      &:hover {
+        box-shadow: 0 0 0 rgba(#5b90f0, 0);
+      }
+    }
+    &.btnLogin {
+      background: #25282d;
+      color: white;
+      box-shadow: 0 15px 30px rgba(#25282d, 0.36);
+      transition: 0.2s linear;
+      .fa {
+        font-size: 20px;
+        padding: 0 5px 0 0;
+      }
+      &:hover {
+        box-shadow: 0 0 0 rgba(#25282d, 0);
+      }
+    }
+  }
+
+  .loginImg img {
+    width: 900px;
+    height: 100%;
+    object-fit: cover;
+  }
+}

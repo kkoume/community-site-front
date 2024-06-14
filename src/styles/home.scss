@@ -1,0 +1,92 @@
+.Home {
+
+        width: 100%;
+        height: 100vh;
+        background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../../public/images/login.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      
+        .first_div {
+            margin: 0 auto;
+            padding-top: 120px;
+            text-align: center;
+        }
+        .txt_title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 180px;
+        }
+
+        .first_div .txt_title h2 {
+            color: #fff;
+            padding-left: 20px;
+            font-size: 32px;
+            min-width: 11px;
+            white-space: nowrap;
+            margin: 0;
+            color: transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+    
+        .first_div .txt_title h2::before {
+            content: "일름보에 오신걸 환영합니다.";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding-left: 20px;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            overflow: hidden;
+            border-right: 1px solid #fff;
+            animation: typing 6s steps(31) infinite;
+          }
+          
+          @keyframes typing{
+            0% {
+              width: 0%;
+            }
+            50% {
+              width: 100%;
+            }
+            100% {
+              width: 0%;
+            }
+          }
+
+
+
+
+
+        .first_div .txt_title img {
+            width: 100px;
+        }
+
+        .first_div .txt_link a{
+            color: #333;
+            display: block;
+            width: 600px;
+            height: 60px;
+            background-color: #fff;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 30px;
+            font-size: 20px;
+          
+        }
+
+        
+        .first_div .txt_link a:hover {
+            background-color:  #3467ffe2;
+            color: #fff;
+            transition: 0.3s;
+        }
+}

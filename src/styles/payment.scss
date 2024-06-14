@@ -1,0 +1,25 @@
+.PaymentPage {
+  position: relative;
+
+  .PaymentPage2 {
+    width: 500px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  .btnPayment {
+    button {
+      padding: 11px 22px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3282f6;
+      color: #f9fcff;
+      font-weight: 600;
+      font-size: 17px;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}
